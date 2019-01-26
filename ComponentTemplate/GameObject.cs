@@ -22,14 +22,6 @@ namespace ComponentTemplate
       Components.Add(component);
     }
 
-    private T Get<T>(object obj) where T: Component
-    {
-      if (obj is T)
-        return (T)obj;
-
-      return default(T);
-    }
-
     /// <summary>
     /// Override the ToString to make it easy to see what game object you're looking at
     /// </summary>
